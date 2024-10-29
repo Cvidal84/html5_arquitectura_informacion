@@ -1,3 +1,4 @@
+<!--This is -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +45,27 @@
                 </li>
             </ul>
         </section>
-
+        <section>
+            <form action="procesar.php" method="POST">
+                <label for="nombre">Name:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Add your name" required> 
+                <label for="email">Email:</label> 
+                <input type="email" id="email" name="email" placeholder="Add your email" required>
+                <select id="topics" name="topics">
+                    <option value="" selected="selected">Select your topic</option>
+                    <option value="01">Contact us</option>
+                    <option value="02">Travel with us</option>
+                    <option value="03">Buy merchandising</option>
+                    <option value="04">Donate money</option>
+                </select>
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                <label for="archivo">Sibir archivo de foto:</label>
+                <input type="file" id="archivo" name="archivo"><br><br>
+                <input type="reset" value="Reset form">
+                <input type="submit" value="Submit">
+            </form>    
+        </section>
     </main>
     <footer>
         <nav>
